@@ -14,7 +14,7 @@ const Select = ({options, value, defaultValue, onChange}) => {
             {
                 options.map(quote =>
                     <option
-                        value={JSON.stringify(quote)}
+                        value={quote.name}
                         key={quote.id}
                     >
                         {quote.name}

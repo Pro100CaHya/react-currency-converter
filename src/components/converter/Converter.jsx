@@ -63,10 +63,12 @@ const Converter = ({ quotes, conversion, setConversion }) => {
                     options={quotes}
                     value={conversion.currency.name}
                     defaultValue=""
-                    onKeyDowm
                     onChange={selectedCurrency => setConversion({
                         ...conversion,
-                        currency: JSON.parse(selectedCurrency)
+                        currency: {
+                            name: selectedCurrency,
+                            exchange: quotes.find(item => item.name === selectedCurrency).exchange
+                        }
                     })}
                 />
                 <img
@@ -97,6 +99,5 @@ const Converter = ({ quotes, conversion, setConversion }) => {
     );
 
 }
-
 
 export default Converter;
