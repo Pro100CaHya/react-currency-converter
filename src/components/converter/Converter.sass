@@ -1,0 +1,49 @@
+.converter
+    display: flex
+    background: white
+    flex: 1 1 40%
+    margin: 0 15px 0 0
+    padding: 15px
+    border-radius: 15px
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12)
+    flex-wrap: wrap
+
+    &__section
+        width: 100%
+        justify-content: space-between
+
+        &_center
+            justify-content: center
+            margin: 15px 0 0
+
+    &__field
+        padding: 5px
+        font-size: 1.4rem
+        flex: 1 1 auto
+        text-align: center
+        margin: 0 5px
+
+    &__logo
+        width: 32px
+        height: 32px
+
+    &__input
+        width: 100%
+        font-size: 1.4rem
+        text-align: center
+        padding: 5px
+
+    &__symbol
+        margin: 0 5px
+        font-size: 1.4rem
+
+@media screen and (max-width: 768px)
+
+    .converter
+        flex: 1 1 100%
+        margin: 0 0 15px
+
+@media screen and (max-width: 320px)
+
+    .converter
+        border-radius: 7.5px

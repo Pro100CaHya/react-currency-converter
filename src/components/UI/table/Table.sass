@@ -1,0 +1,45 @@
+.table
+    background: white
+    flex: 1 1 60%
+    margin: 0 0 0 15px
+    border-radius: 15px
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12)
+    text-transform: uppercase
+
+    &__body
+        text-align: center
+
+    &__cell
+        padding: 7.5px 15px
+        font-size: 1.4rem
+
+        &_fit
+            width: 1%
+            white-space: nowrap
+
+        &_img
+            font-size: 0
+
+        &_right
+            text-align: right
+
+            span
+                color: #356000
+
+    &__logo
+        width: 32px
+        height: 32px
+
+@media screen and (max-width: 768px)
+
+    .table
+        flex: 1 1 100%
+        margin: 0
+
+@media screen and (max-width: 320px)
+
+    .table
+        border-radius: 7.5px
+
+        &__cell
+            padding: 5px
