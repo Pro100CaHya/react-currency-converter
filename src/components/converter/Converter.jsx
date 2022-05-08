@@ -8,11 +8,6 @@ import "./Converter.sass";
 
 const Converter = ({ quotes, conversion, setConversion }) => {
 
-    const setCurrencyImage = (name) => {
-        if (name === "") return logos.none;
-        return logos[name];
-    }
-
     const convertCurrency = (arg, flag) => {
 
         if (arg === "") {
@@ -31,7 +26,7 @@ const Converter = ({ quotes, conversion, setConversion }) => {
         if (arg.match(regex) === null) {
             return;
         }
-        
+
         const argExchange = parseFloat(conversion.currency.exchange);
 
         if (flag) {
@@ -72,10 +67,10 @@ const Converter = ({ quotes, conversion, setConversion }) => {
                     })}
                 />
                 <img
-                    src={setCurrencyImage(conversion.currency.name)}
+                    src={logos[conversion.currency.name]}
                     alt={conversion.currency.name}
-                    className="converter__logo"
-                    title="USA Dollar"
+                    className={conversion.currency.name === "" ? "converter__logo converter__logo_unvisible" : "converter__logo"}
+                    title="Currency"
                 />
             </div>
             <div className="converter__section converter__section_center row">
@@ -85,6 +80,7 @@ const Converter = ({ quotes, conversion, setConversion }) => {
                     placeholder="1"
                     value={conversion.value.initialValue}
                     onChange={(e) => convertCurrency(e.target.value, true)}
+                    disabled={conversion.currency.name === "" ? "disabled" : ""}
                 />
                 <p className="converter__symbol">=</p>
                 <Input
@@ -93,6 +89,7 @@ const Converter = ({ quotes, conversion, setConversion }) => {
                     placeholder={conversion.currency.exchange}
                     value={conversion.value.requiredValue}
                     onChange={(e) => convertCurrency(e.target.value, false)}
+                    disabled={conversion.currency.name === "" ? "disabled" : ""}
                 />
             </div>
         </div>

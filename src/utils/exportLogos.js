@@ -36,8 +36,6 @@ import ReactCurrencyConverter from "../assets/img/logo.svg";
 import myOwnLogo from "../assets/img/my-own-logo.png";
 import githubLogo from "../assets/img/github-logo.svg";
 
-import none from "../assets/img/none.svg";
-
 export default {
     AUD,
     GBP,
@@ -71,7 +69,6 @@ export default {
     ZAR,
     JPY,
     USD,
-    none,
     ReactCurrencyConverter,
     myOwnLogo,
     githubLogo
