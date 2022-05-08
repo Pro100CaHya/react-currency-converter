@@ -2,6 +2,6 @@
 
 ## [Паспорт](docs/PASSPORT.md)
 
-## [Описание](docs/DESCRIPTION.md)
+## [Описание](docs/INFO.md)
 
 ## [Инструкция по запуску](docs/INSTALL.md)
