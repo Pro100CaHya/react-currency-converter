@@ -5,5 +5,3 @@
 ## [Описание](docs/DESCRIPTION.md)
 
 ## [Инструкция по запуску](docs/INSTALL.md)
-
-## Описание
