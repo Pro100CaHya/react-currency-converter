@@ -23,6 +23,8 @@
 
 Деплой³: [Heroku](http://pro100cahya-react-cash-convert.herokuapp.com/)
 
+-------------
+
 ¹ - сложность задания определена исходя из похожих тестовый заданий на позицию `Intern/Junior React Developer (Стажёр/Джуниор React разработчик)`
 
 ² - время выполнения указано:
