@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="footer__row row">
                 <p className="footer__text">2022© Project by Pro100CaHya</p>
                 <a
-                    href="https://github.com/Pro100CaHya"
+                    href="https://pro100cahya.github.io/about"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="footer__link link"

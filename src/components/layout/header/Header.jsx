@@ -53,7 +53,7 @@ const Header = () => {
                             <li className="nav__item">
                                 <Link
                                     className="nav__link link"
-                                    to="/"
+                                    to="/about"
                                 >
                                     About
                                 </Link>

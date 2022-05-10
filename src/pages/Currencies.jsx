@@ -6,6 +6,7 @@ import Table from "../components/UI/table/Table";
 
 import CurrencyService from "../API/currencyService";
 import filterCurrencies from "../utils/currencies";
+import Loader from "../components/UI/loader/Loader";
 
 const Currencies = () => {
 
@@ -39,17 +40,24 @@ const Currencies = () => {
 
     return (
         <Main>
-            {
-                quotes === null ? "" :
-                    <section className="content row currency">
-                        <Converter
-                            quotes={quotes}
-                            conversion={conversion}
-                            setConversion={setConversion}
-                        />
-                        <Table quotes={quotes} />
-                    </section>
-            }
+            <section className="content row currency">
+                {
+                    quotes === null ?
+                        <>
+                            <Loader />
+                            <Loader className="loader_large" />
+                        </>
+                        :
+                        <>
+                            <Converter
+                                quotes={quotes}
+                                conversion={conversion}
+                                setConversion={setConversion}
+                            />
+                            <Table quotes={quotes} />
+                        </>
+                }
+            </section>
         </Main>
     );
 

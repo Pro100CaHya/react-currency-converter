@@ -1,0 +1,28 @@
+.loader
+    background: #ffffff
+    background: linear-gradient(110deg, #ffffff 8%, #f9f9f9 18%, #ffffff 33%)
+    border-radius: 15px
+    background-size: 200% 100%
+    animation: 1.5s shine linear infinite
+    flex: 1 1 40%
+    height: 111.67px
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12)
+    margin: 0 15px 0 0
+
+    &_large
+        flex: 1 1 60%
+        margin: 0 0 0 15px
+
+@keyframes shine
+    to
+        background-position-x: -200%
+
+@media screen and (max-width: 768px)
+
+    .loader
+        flex: 1 1 100%
+        margin: 0 0 15px
+
+        &_large
+            flex: 1 1 100%
+            margin: 0

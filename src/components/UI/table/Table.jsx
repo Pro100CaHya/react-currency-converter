@@ -4,7 +4,7 @@ import logos from "../../../utils/exportLogos";
 
 import "./Table.sass";
 
-const Table = ({ quotes }) => {
+const Table = ({ quotes, isLoading }) => {
 
     return (
         <table className="table">
